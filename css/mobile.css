@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: var(--bg-color);
+}
+
+.container{
+    position: relative;
+    width: 350px;
+    height: 700px;
+    background: var(--white-color);
+    border-radius: 30px;
+    box-shadow: 0px 5px 30px rgb(0, 0, 0,0.5);
+}
+
+.logo img{
+    width: 140px;
+    padding: 20px;
+    display: flex;
+    justify-self: center;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.input-box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 22.5px;
+}
+
+.field-box{
+    font-size: 16px;
+    width: 100%;
+    height: 50px;
+    padding-top: 10px;
+    border: none;
+    border-bottom: 1px solid;
+    color: #d8c5a8;
+    outline: none;
+    cursor: pointer;
+}
+
+.input-box:focus, .input-box:valid{
+    border-bottom: 2px solid;
+}
+
+.input-box label{
+    position: absolute;
+    top: 22%;
+    left: 0;
+    transform: translateY(-50%);
+    font-weight: 500;
+    color: #555;
+    transition: all .3s ease-in;
+}
+
+.input-box:focus ~ label, .input-box:valid ~ label{
+    top: -5%;
+    transform: translateY(-15%);
+    font-size: 14px;
+}
+
+.submit{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin: 22.5px;
+}
+
+.submit #submit{
+    font-size: 16px;
+    margin-top: 2.6rem;
+    height: 22px;
+    border: none;
+    background-color: #d8c5a8;
+    border-radius: 10px;
+    box-shadow: 3px 4px 8px rgb(0, 0, 0,0.7);
+    cursor: pointer;
+}
+
+.bottom-links{
+    display: flex;
+    position: relative;
+    margin: 3rem;
+    flex-direction: column;
+}
+
+.bottom-links a{
+    text-decoration: none;
+    color: #000;
+    padding: 8px;
+}
